@@ -69,8 +69,6 @@ def collect_job_data(joblink_list):
 def countword(text):
     #removing stopwords from the data
     stop = stopwords.words('english')
-    #update stopwords as below
-    stop.update(())
     
     
     nostopword = ' '.join([word for word in text.split() if word not in stop])
